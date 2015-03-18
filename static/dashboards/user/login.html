@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenI User Dashboard</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"><!-- ========================= Cascading Style Sheets ========================= -->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link href="stylesheets/jquery-ui.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link id="twentytwelve-fonts-css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+    <link id="twentytwelve-style-css" rel="stylesheet" href="/wp-content/themes/openi/style1bba.css?ver=3.5" type="text/css" media="all">
+    <!--if lt IE 9link#twentytwelve-ie-css(rel='stylesheet', href='https://www.openi-ict.eu/wp-content/themes/openi/css/ie.css?ver=20121010', type='text/css', media='all')
+    -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body class="home page page-id-4 page-template-default custom-font-enabled">
+    <div id="page" class="hfeed site">
+      <header id="masthead" role="banner" class="site-header"><!--  place Header here  -->
+        <div id="headergroup">
+          <hgroup>
+            <h1 class="site-title"><a href="/user/" title="OPENi" rel="home">OPENi</a></h1>
+          </hgroup>
+        </div>
+      </header>
+      <!-- #masthead-->
+    </div><!--  place the Main Container here  -->
+    <div id="login-overlay" class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title">Login to OpenI-Daschboard.com</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="well">
+                <form id="loginForm" method="POST" action="/user/login" novalidate="novalidate">
+                  <div class="form-group">
+                    <label for="username" class="control-label">Username</label>
+                    <input type="text" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com" class="form-control"><span class="help-block"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="control-label">Password</label>
+                    <input type="password" id="password" name="password" value="" required="" title="Please enter your password" class="form-control"><span class="help-block"></span>
+                  </div>
+                  <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="remember" id="remember"><span>Remember login</span>
+                    </label>
+                    <p class="help-block">(if this is a private computer)</p>
+                  </div>
+                  <button type="submit" class="btn btn-success btn-block">Login</button><a href="/user/forgot/" class="btn btn-default btn-block">Help to login</a>
+                </form>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <p class="lead">Register now for<span class="text-success">FREE</span></p>
+              <p><a href="/user/register" class="btn btn-info btn-block">Yes please, register now!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- ========================= JavaScript ========================= --><!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+  </body>
+</html>
